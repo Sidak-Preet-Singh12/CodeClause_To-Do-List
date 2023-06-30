@@ -1,0 +1,130 @@
+body{
+  background-color: rgb(88, 149, 200);
+}
+.container {
+  margin: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form#taskForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+form#taskForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+form#taskForm select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+form#taskForm select {
+  background-color: #f1f1f1;
+}
+
+form#taskForm button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.priority-filter-container{
+    display: flex;
+    justify-content: end;
+}
+
+.priority-filter-container select{
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.priority-filter-container span{
+    font-size: 20px;
+}
+
+ul#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#taskList li {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+ul#taskList li:nth-child(odd) {
+  background-color: #cacaca;
+}
+
+ul#taskList li .tasks {
+  grid-column: span 4 / span 4;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+ul#taskList li .priority {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+ul#taskList li .priority-Low {
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+ul#taskList li .priority-Medium {
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+}
+
+ul#taskList li .priority-High {
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+
+ul#taskList li .delete {
+  background-color: #ff8080;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+ul#taskList li .delete:hover {
+  background-color: #ff5252;
+  opacity: 1;
+}
