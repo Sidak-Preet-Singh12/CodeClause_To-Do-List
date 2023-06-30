@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="taskForm" on>
+            <input type="text" name="task" placeholder="Enter the task"/>
+            <select name="priority">
+                <option value="3">Low</option>
+                <option value="2">Medium</option>
+                <option value="1">High</option>
+            </select> 
+            <button type="submit">
+                Add&nbsp;Task
+            </button>
+        </form>
+        <div class="priority-filter-container">
+            <span>Filter:</h3>
+            <select id="priorityFilter">
+                <option value="all">Show All</option>
+                <option value="3">Low</option>
+                <option value="2">Medium</option>
+                <option value="1">High</option>
+            </select> 
+        </div>
+        <ul id="taskList">
+            
+        </ul>
+    </div>
+    
+    <script src="app.js" defer></script>
+
+</body>
+</html>
